@@ -60,7 +60,7 @@ opencv-python=4.5.3.56=pypi_0
 openh264=2.1.0=hd408876_0
 openjpeg=2.3.0=h05c96fa_1
 openssl=1.1.1k=h27cfd23_0
-pillow=8.3.1=py38h2c7a002_0
+pillow=8.3.2=pypi_0
 pip=21.0.1=py38h06a4308_0
 pyasn1=0.4.8=pypi_0
 pyasn1-modules=0.2.8=pypi_0
