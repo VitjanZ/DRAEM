@@ -13,7 +13,7 @@ PyTorch implementation of [DRAEM](https://openaccess.thecvf.com/content/ICCV2021
 }
 ```
 ## Datasets
-To train no the MVtec Anomaly Detection dataset [download](https://www.mvtec.com/company/research/datasets/mvtec-ad)
+To train on the MVtec Anomaly Detection dataset [download](https://www.mvtec.com/company/research/datasets/mvtec-ad)
 the data and extract it. The [Describable Textures dataset](https://www.robots.ox.ac.uk/~vgg/data/dtd/) was used as the anomaly source 
 image set in most of the experiments in the paper. You can run the **download_dataset.sh** script from the project directory
 to download the MVTec and the DTD datasets to the **datasets** folder in the project directory:
@@ -23,7 +23,7 @@ to download the MVTec and the DTD datasets to the **datasets** folder in the pro
 
 
 ## Training
-Pass the folder containing the training dataset to the **train_DRAE.py** script as the --data_path argument and the
+Pass the folder containing the training dataset to the **train_DRAEM.py** script as the --data_path argument and the
 folder locating the anomaly source images as the --anomaly_source_path argument. 
 The training script also requires the batch size (--bs), learning rate (--lr), epochs (--epochs), path to store checkpoints
 (--checkpoint_path) and path to store logs (--log_path).
@@ -39,7 +39,7 @@ The conda environement used in the project is decsribed in **requirements.txt**.
 Pretrained DRAEM models for each class of the MVTec anomaly detection dataset are available [here](https://drive.google.com/uc?id=1eOE8wXNihjsiDvDANHFbg_mQkLesDrs1).
 To download the pretrained models directly see **./scripts/download_pretrained.sh**.
 
-The pretrained models achieve a 98.1 image-level ROC AUC, 74.5 pixel-wise ROC AUC and a 68.9 pixel-wise AP.
+The pretrained models achieve a 98.1 image-level ROC AUC, 97.5 pixel-wise ROC AUC and a 68.9 pixel-wise AP.
 
 
 ## Evaluating
