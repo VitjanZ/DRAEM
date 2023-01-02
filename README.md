@@ -53,6 +53,7 @@ python test_DRAEM.py --gpu_id 0 --base_model_name "DRAEM_seg_large_ae_large_0.00
 
 ## Inference
 For Inference Dataset loader was modified to load only two images per class and Heatmap of Anomaly would be predicted by the model and displayed using Matplotlib.
+
 The inference script requires the --gpu_id arguments, the name of the checkpoint files (--base_model_name) for trained models, the 
 location of the MVTec anomaly detection dataset (--data_path) and the folder where the checkpoint files are located (--checkpoint_path)
 with pretrained models can be run with:
@@ -60,5 +61,5 @@ with pretrained models can be run with:
 ```
 python visualize_DRAEM.py --gpu_id 0 --base_model_name "DRAEM_seg_large_ae_large_0.0001_800_bs8" --data_path ./datasets/mvtec/ --checkpoint_path ./checkpoints/DRAEM_checkpoints/
 ```
-
+![Screenshot](images/result_1.PNG)
 
